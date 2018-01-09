@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TabBarIOS } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 const listItem = props => (
     <TouchableOpacity onPress={props.onItemPressed}>
     <View style={styles.listItem}>
         <Text>{props.placeName}</Text>
+        <Image source={props.placeImage} />
     </View>
     </TouchableOpacity>
 );
